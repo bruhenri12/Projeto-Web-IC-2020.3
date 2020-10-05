@@ -8,6 +8,7 @@ html, body {
     display: flex;
 }
 
+/* Estilização do menu esquerdo */
 .menu-esquerdo {
     position: fixed;
     box-sizing: border-box;
@@ -38,12 +39,14 @@ html, body {
     text-align: center;
 }
 
+/* Estilização da foto de perfil menu esquerdo */
 .foto-menu-esquerdo {
     border-radius: 25%;
     width: 40%;
     margin-bottom: 1rem;
 }
 
+/* Estilização do cabeçalho */
 .header {
     position: fixed;
     top: 0;
@@ -59,16 +62,29 @@ html, body {
     font-size: 1rem;
 }
 
-.inicial {
-    margin-left: 10rem;
-}
-
+/* Só um detalhe, eu vi que não podia utilizar "frameworks ou bibliotecas que auxiliam no 
+desenvolvimento de elementos visuais." Eu não sei muito bem o que são são esses frameworks
+e essas bibliotecas, então tentei utilizar o que parecesse ser puro do css. Mas mesmo assim eu 
+queria adicionar esses botões, já que estava no pdf que eram permitdas imagens estilizadas
+então eu criei umas imagens .png simples no GIMP as usei. */
 .img-header {
     width: 50%;
+    height: 50%;
     align-items: center;
     justify-content: space-around;
+    transition: width 1s;
 }
 
+/* Aqui foi uma gambiarra, pois eu não consegui justificar as imagens ¯\_(ツ)_/¯ */
+.inicial {
+    margin-left: 8rem;
+}
+
+.img-header:hover {
+    width: 60%;
+  }
+
+/* Estilização do main */
 .main {
     font-family: 'Press Start 2P', sans-serif;
     color: rgb(196, 196, 196);
@@ -89,10 +105,26 @@ a:hover {
 .section {
     display: flex;
     align-items: center;
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 4rem 1rem 5rem 1rem;
     max-width: 70vw;
 }
 
 .section .section-content {
     min-height: 92vh;
+}
+
+/* Animação do cabeçalho */
+.img-header {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
 }
