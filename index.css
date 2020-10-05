@@ -1,14 +1,14 @@
 html, body {
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(54, 51, 51);
+    background-color: #03071E;
 }
 
 .container {
     display: flex;
 }
 
-/* Estilização do menu esquerdo */
+/* Estilização: menu esquerdo */
 .menu-esquerdo {
     position: fixed;
     box-sizing: border-box;
@@ -39,21 +39,21 @@ html, body {
     text-align: center;
 }
 
-/* Estilização da foto de perfil menu esquerdo */
+/* Estilização: foto de perfil menu esquerdo */
 .foto-menu-esquerdo {
     border-radius: 25%;
     width: 40%;
     margin-bottom: 1rem;
 }
 
-/* Estilização do cabeçalho */
+/* Estilização: cabeçalho */
 .header {
     position: fixed;
     top: 0;
     left: 25%;
     width: 75%;
     height: 8vh;
-    background-color: rgba(190, 23, 23, 0.986);
+    background-color: #9D0208;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -75,16 +75,25 @@ então eu criei umas imagens .png simples no GIMP as usei. */
     transition: width 1s;
 }
 
-/* Aqui foi uma gambiarra, pois eu não consegui justificar as imagens ¯\_(ツ)_/¯ */
-.inicial {
-    margin-left: 8rem;
-}
-
 .img-header:hover {
     width: 60%;
-  }
+}
 
-/* Estilização do main */
+/* Aqui foi uma gambiarra, pois eu não consegui justificar as imagens ¯\_(ツ)_/¯ */
+.inicial {
+    margin-left: 6rem;
+}
+
+.objetivos {
+    margin-left: 4rem;
+}
+
+.jogos {
+    margin-right: 4rem;
+    margin-top: 0.3rem;
+}
+
+/* Estilização: main */
 .main {
     font-family: 'Press Start 2P', sans-serif;
     color: rgb(196, 196, 196);
@@ -93,6 +102,17 @@ então eu criei umas imagens .png simples no GIMP as usei. */
     margin: 1rem;
 }
 
+/* Estilização: img-animes */
+.img-anime {
+    width: 20%;
+    position: relative;
+    margin-left: 34.5%;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilização: links */
 a {
     text-decoration: none;
     color: rgb(190, 175, 33);
@@ -102,6 +122,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Estilização: section */
 .section {
     display: flex;
     align-items: center;
